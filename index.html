@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenSteps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>GreenSteps</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tips">Tips</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Small steps for a greener world</h2>
+      <p>Simple everyday choices can help protect our environment.</p>
+      <a class="button" href="#tips">See Green Tips</a>
+    </section>
+
+    <section id="about">
+      <h2>About GreenSteps</h2>
+      <p>Learn easy ways to save water, reduce waste, and care for nature.</p>
+    </section>
+
+    <section id="tips">
+      <h2>Everyday Green Tips</h2>
+      <div class="cards">
+        <article><h3>Save Water</h3><p>Turn off the tap while brushing.</p></article>
+        <article><h3>Reuse Bags</h3><p>Carry a reusable shopping bag.</p></article>
+        <article><h3>Save Energy</h3><p>Switch off lights when you leave.</p></article>
+      </div>
+    </section>
+
+    <section class="sorting">
+      <h2>Waste Sorting Helper</h2>
+      <label for="item">Choose an item:</label>
+      <select id="item">
+        <option value="">Select an item</option>
+        <option value="Recycle paper and cardboard. Keep it clean and dry.">Paper</option>
+        <option value="Rinse glass jars before recycling them.">Glass jar</option>
+        <option value="Compost food scraps if possible.">Food scraps</option>
+      </select>
+      <button onclick="showTip()">Show advice</button>
+      <p id="answer"></p>
+    </section>
+
+    <section id="contact">
+      <h2>Get Involved</h2>
+      <p>Choose one green habit and try it today!</p>
+    </section>
+  </main>
+
+  <footer><p>GreenSteps | Small actions make a difference.</p></footer>
+
+  <script>
+    function showTip() {
+      const item = document.getElementById("item").value;
+      document.getElementById("answer").textContent =
+        item || "Please choose an item first.";
+    }
+  </script>
+</body>
+</html>

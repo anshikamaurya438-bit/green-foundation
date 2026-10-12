@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #26372a;
+  background: #f7faf6;
+  line-height: 1.6;
+}
+
+header {
+  background: #356344;
+  color: white;
+  padding: 16px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: blue;
+  margin-left: 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px 8%;
+}
+
+.hero {
+  background: #e5f0e3;
+  text-align: center;
+  padding: 70px 8%;
+}
+
+.hero h2 {
+  font-size: 32px;
+}
+
+.button,
+button {
+  display: inline-block;
+  background: #356344;
+  color: white;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+}
+
+.cards article {
+  flex: 1;
+  background: white;
+  border: 1px solid #d8e1d7;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.sorting {
+  background: #e5f0e3;
+}
+
+select {
+  padding: 10px;
+  margin: 8px;
+}
+
+#answer {
+  font-weight: bold;
+}
+
+footer {
+  background: #356344;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+  }
+}
